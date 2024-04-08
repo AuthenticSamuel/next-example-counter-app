@@ -1,11 +1,14 @@
-type HomePageProps = {};
+import { CounterDisplay } from "@/components/counter-display";
 
-const HomePage = ({}: HomePageProps) => {
+type HomeProps = {};
+
+const Home = ({}: HomeProps) => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      infernal·dev Next.js template
+    <main className="flex w-full max-w-6xl flex-col items-center gap-16 pt-16">
+      <h1 className="text-3xl font-semibold">Counter</h1>
+      <CounterDisplay />
     </main>
   );
 };
 
-export default HomePage;
+export default Home;
